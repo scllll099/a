@@ -491,4 +491,6 @@ async def kick(interaction: discord.Interaction, member: discord.Member, reason:
     except Exception as e:
         await interaction.response.send_message(f"❌ An error occurred: {e}", ephemeral=True)
 
-bot.run("MTQ4MTYxNjc5MDIzMTcxNTkyMg.GxfZo4.Xdjtbl-xNcA7z54ohLx_8tOJE3z28YU-ZU8Ht4")
+# ── Run ───────────────────────────────────────────────────────────────────────
+import os
+bot.run(os.environ["TOKEN"])
